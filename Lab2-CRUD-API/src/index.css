@@ -1,0 +1,196 @@
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Rajdhani', 'Roboto', sans-serif;
+}
+
+.games-container {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.games-title {
+  text-align: center;
+  color: #00ffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Tabla de juegos */
+.games-table {
+  background-color: #252525;
+  color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.games-table thead {
+  background-color: #333;
+}
+
+.games-table th {
+  color: #00ffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #00ffff;
+}
+
+.games-table tr:hover {
+  background-color: #353535;
+}
+
+.games-table td {
+  vertical-align: middle;
+}
+
+/* Botones */
+.create-button {
+  background-color: #00cc66;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 204, 102, 0.5);
+  transition: all 0.3s ease;
+}
+
+.create-button:hover {
+  background-color: #00ff80;
+  transform: scale(1.05);
+}
+
+.edit-button {
+  background-color: #0099ff;
+  border: none;
+  margin-right: 5px;
+  box-shadow: 0 0 5px rgba(0, 153, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #00ccff;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #ff3344;
+  border: none;
+  box-shadow: 0 0 5px rgba(255, 51, 68, 0.5);
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff5566;
+  transform: scale(1.05);
+}
+
+.insert-button {
+  background-color: #9933ff;
+  border: none;
+  box-shadow: 0 0 5px rgba(153, 51, 255, 0.5);
+}
+
+.insert-button:hover {
+  background-color: #aa55ff;
+}
+
+.edit-confirm-button {
+  background-color: #ff9900;
+  border: none;
+  box-shadow: 0 0 5px rgba(255, 153, 0, 0.5);
+}
+
+.edit-confirm-button:hover {
+  background-color: #ffaa33;
+}
+
+.cancel-button {
+  background-color: #888;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #999;
+}
+
+/* Modales */
+.game-modal .modal-content {
+  background-color: #252525;
+  color: #e0e0e0;
+  border: 1px solid #00ffff;
+}
+
+.modal-header {
+  border-bottom: 2px solid #00ffff;
+  background-color: #333;
+}
+
+.modal-header h3 {
+  color: #00ffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.modal-footer {
+  border-top: 1px solid #444;
+}
+
+/* Formularios */
+.form-control {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.form-control:focus {
+  background-color: #3a3a3a;
+  color: #fff;
+  border-color: #00ffff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 255, 0.25);
+}
+
+/* Estados de carga y error */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.loading-spinner {
+  border: 5px solid rgba(0, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 5px solid #00ffff;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container {
+  padding: 30px;
+  background-color: #301515;
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: center;
+  border: 1px solid #ff3344;
+}
+
+.error-message h3 {
+  color: #ff3344;
+  margin-bottom: 15px;
+}
