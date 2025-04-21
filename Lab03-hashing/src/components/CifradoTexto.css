@@ -1,0 +1,92 @@
+/* Estilos básicos */
+.encryption-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.encryption-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Entradas */
+.encryption-input-group {
+  margin-bottom: 15px;
+}
+
+.encryption-input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+.encryption-input {
+  width: 95%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.encryption-input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+/* Botones */
+.encryption-button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+.encryption-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.encryption-button-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.encryption-button-secondary {
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+.encryption-button:hover {
+  opacity: 0.9;
+}
+
+/* Área de resultados */
+.encryption-output p {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.encryption-result-box {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 40px;
+  font-family: monospace;
+  margin-bottom: 15px;
+  word-break: break-all;
+}

@@ -156,9 +156,10 @@ const Videogames = () => {
   };
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setForm({
       ...form,
-      [e.target.name]: e.target.value,
+      [name]: name === "anioLanzamiento" ? parseInt(value, 10) : value,
     });
   };
 
